@@ -1,0 +1,64 @@
+p {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+h1 {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.book-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    
+    
+   
+}
+
+
+
+.book-cover {
+    width: 50px;
+    height: 600px;
+    object-fit: cover;
+    
+
+}
+
+.book-card {
+    
+    transition: transform 0.5s ease;
+    border: 3px solid brown;
+    
+}
+
+.book-card:hover {
+
+    transform: translateY(-10px) scale(1.05);
+
+}
+
+.book-details{
+
+    display: none;
+    padding: 1rem;
+    border: 3px solid brown;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    box-shadow: 5px 10px 3px gray;
+    
+
+
+}
+
+.book-details.open{
+
+    display: block;
+
+}
+
